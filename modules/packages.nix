@@ -1,14 +1,15 @@
-{ config, pkgs, ... }:
+```nix
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
-    # core utlis 
+    # core utilities
     gcc
     gnumake
     binutils
     pkg-config
-    psmisc      # killall
-    xdg-utils   # OPENING LINKS IN THE APPS !!! 
+    psmisc
+    xdg-utils
     procps
     wget
     curl
@@ -17,7 +18,7 @@
     ffmpeg-full
     zip
     unzip
-    ripgrep 
+    ripgrep
     fd
     nil
     playerctl
@@ -25,40 +26,41 @@
     nodejs
     libnotify
 
-    # sysem stuff
+    # system tools
     nano
     fastfetch
-    hyfetch
-    btop
     mission-center
     pika-backup
     gparted
     neovim
-    starship    # prompt for zsh
+    starship
     smartmontools
     wireguard-tools
     ddrescue
     spotify
     zoom-us
     gpu-screen-recorder
-    
-    # virt + extra stuff for myself
+
+    # virtualization and personal utilities
     solaar
     piper
-    lact        # fan controller lole (too lazy to get in bios)
+    lact
     virt-manager
 
-    # gayming
+    # gaming
     heroic
     (lutris.override {
-      extraPkgs = pkgs: [ wineWowPackages.stable winetricks ];
+      extraPkgs = pkgs: [
+        wineWowPackages.stable
+        winetricks
+      ];
     })
     bottles
     prism-launcher
     amethyst-mod-manager
     protonup-qt
 
-    # yes i use the internet 
+    # internet
     speedtest-cli
     signal-desktop
     vesktop
@@ -69,7 +71,7 @@
     ente-auth
     protonvpn-gui
 
-    # i guess editing and recording?
+    # media and recording
     obs-studio
     kdenlive
     mpv
@@ -82,7 +84,7 @@
     music-presence
     freac
 
-    # office stuff i guess
+    # office
     obsidian
     libreoffice
     onlyoffice-bin
@@ -96,13 +98,11 @@
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
-    
-    # starship for zsh shell
+
+    # starship prompt
     promptInit = ''
-      eval "$(starship init zsh)"
+      eval "$(starship init zsh)";
     '';
   };
-
-  # nix
-  nixpkgs.config.allowUnfree = true;
 }
+```
