@@ -8,7 +8,10 @@
 
   outputs = { self, nixpkgs, nix-flatpak, ... }@inputs: {
     nixosConfigurations.valkyrie = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; }; 
+      specialArgs = {
+        inherit inputs;
+      };
+
       modules = [
         ./configuration.nix
         nix-flatpak.nixosModules.nix-flatpak
