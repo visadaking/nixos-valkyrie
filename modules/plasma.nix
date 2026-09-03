@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  # KDE Plasma 6
+  # kde plasma 6
   services.desktopManager.plasma6.enable = true;
 
   services.displayManager.sddm = {
@@ -9,18 +9,18 @@
     wayland.enable = true;
   };
 
-  # Prefer Wayland for Electron/Chromium applications
+  # prefer wayland
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
 
-  # Keyboard layout
+  # keyboard layout
   services.xserver.xkb = {
     layout = "us,il";
     options = "grp:alt_shift_toggle";
   };
 
-  # Plasma customization
+  # plasma customization
   environment.systemPackages = with pkgs; [
     papirus-icon-theme
     capitaine-cursors
