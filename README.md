@@ -18,3 +18,8 @@ so i thought it was cool, plus i think this is badass.
 note: if you're trying this setup on nvidia systems it wouldn't work, AMD only.
 
 last updated - 03/09/2026
+
+
+
+thanks to rond for hosting my config for NixOS
+github - github.com/visadaking/nixos-valkyrie
