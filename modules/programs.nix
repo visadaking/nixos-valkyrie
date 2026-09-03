@@ -11,7 +11,7 @@
   # xbox controller support
   hardware.xone.enable = true;
 
-  # v switch automation and editor shortcuts
+  # valkyrie shell shortcuts
   programs.zsh.shellAliases = {
     v = "nvim";
     v-switch = "sudo nixos-rebuild switch --flake ~/nixos-valkyrie#valkyrie";
