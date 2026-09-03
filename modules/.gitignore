@@ -1,0 +1,5 @@
+secrets.nix
+*.age
+*.ssh
+.env
+result
