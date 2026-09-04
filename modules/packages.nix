@@ -31,27 +31,25 @@
     heroic
     (lutris.override {
       extraPkgs = pkgs: [
-        wineWowPackages.stable
+        wineWow64Packages.stable
         winetricks
       ];
     })
     bottles
-    prism-launcher
-    amethyst-mod-manager
-    papercutter
+    prismlauncher
     lact
     protonup-qt
 
     # internet
-    signal-desktop
-    vesktop
-    helium
-    qbittorrent
-    localsend
+  signal-desktop
+  vesktop
+  librewolf
+  qbittorrent
+  localsend
 
-    # editing stuff
+  # editing stuff
     obs-studio
-    kdenlive
+    kdePackages.kdenlive
     mpv
     qview
     cine
@@ -59,17 +57,17 @@
     fooyin
     jellyfin
     audacity
-    music-presence
+
 
     # internet stuff
     obsidian
     libreoffice
-    onlyoffice-bin
+  onlyoffice-desktopeditors
     peazip
-    bitwarden
+    bitwarden-desktop
     ente-auth
-    protonvpn-gui
-    shelly
+    proton-vpn
+
   ];
 
   nixpkgs.config.allowUnfree = true;
