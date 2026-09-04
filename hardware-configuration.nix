@@ -1,9 +1,7 @@
-{ config, lib, pkgs, modulesPath, ... }:
-
-{
-  # placeholder 
-  # replace this entire file with the one generated in /etc/nixos/
-  imports = [ ];
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
-  fileSystems."/" = lib.mkDefault { };
+{ config, lib, pkgs, ... }: {
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  fileSystems."/" = {
+    device = "/dev/disk/by-label/NIXOS_ROOT";
+    fsType = "ext4";
+  };
 }

@@ -2,4 +2,4 @@
 
 {
   virtualisation.libvirtd.enable = true;
-} 
+}

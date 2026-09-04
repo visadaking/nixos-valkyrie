@@ -1,0 +1,7 @@
+# safety lock
+secrets.nix
+*.age
+*.ssh
+.env
+result
+flake.lock
