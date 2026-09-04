@@ -8,6 +8,7 @@
     ./modules/programs.nix
     ./modules/services.nix
     ./modules/virtualization.nix
+    ./modules/plasma.nix
   ];
 
   networking.hostName = "valkyrie";
