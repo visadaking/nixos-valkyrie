@@ -4,4 +4,3 @@ secrets.nix
 *.ssh
 .env
 result
-flake.lock
