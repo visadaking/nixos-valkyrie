@@ -71,8 +71,8 @@
   };
   nix.settings.auto-optimise-store = true;
   nix.settings = {
-    substituters = [ "https://nix-gaming.cachix.org" ];
-    trusted-public-keys = [ "nix-gaming.cachix.org-1:nbjlureqMbRAxR1g/f3hXemL9svXaZF/Ees8vCUUs4=" ];
+    extra-substituters = [ "https://nix-gaming.cachix.org" ];
+    extra-trusted-public-keys = [ "nix-gaming.cachix.org-1:nbjlureqMbRAxR1g/f3hXemL9svXaZF/Ees8vCUUs4=" ];
   };
 
   system.autoUpgrade = {
