@@ -15,7 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # fstrim nvme  m.2 
+  # fstrim nvme m.2
   services.fstrim.enable = true;
 
   # dns
@@ -56,12 +56,6 @@
 
   time.timeZone = "Asia/Jerusalem";
   i18n.defaultLocale = "en_US.UTF-8";
-
-  # zsh
-  programs.zsh = {
-    enable = true;
-    enableBashCompletion = true;
-  };
 
   fonts.packages = with pkgs; [
     nerdfonts
