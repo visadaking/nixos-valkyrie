@@ -9,14 +9,12 @@
     ./modules/programs.nix
     ./modules/services.nix
     ./modules/virtualization.nix
+    ./modules/maintenance.nix
   ];
 
   # bootloader
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  # fstrim nvme m.2
-  services.fstrim.enable = true;
 
   # dns
   networking.networkmanager.dns = "systemd-resolved";
