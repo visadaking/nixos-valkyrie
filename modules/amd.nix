@@ -1,30 +1,31 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  # native
-  hardware.amdgpu.overdrive.enable = true;
-
-  # NixOS Wiki: Enable AMD GPU kernel module early for KMS
+  # amd graphics
   boot.initrd.kernelModules = [ "amdgpu" ];
 
-  # gpu
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+
     extraPackages = with pkgs; [
       rocmPackages.clr.icd # opencl
-      vaapiVdpau           # video acceleration
+      vaapiVdpau # video acceleration
       libvdpau-va-gl
     ];
   };
 
   # lact
-  systemd.packages = with pkgs; [ lact ];
+  systemd.packages = with pkgs; [
+    lact
+  ];
+
   systemd.services.lact.enable = true;
 
   # logitech support
   hardware.logitech.wireless.enable = true;
-  hardware.logitech.wireless.enableGraphical = true; # solaar for logitech XDDDDDDD
+  hardware.logitech.wireless.enableGraphical = true;
 
-  # input device support 
+  # input device support
   services.ratbagd.enable = true;
+}
