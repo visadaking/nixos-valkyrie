@@ -25,6 +25,7 @@
     jq
     nodejs
     libnotify
+    tmux
 
     # system tools
     nano
