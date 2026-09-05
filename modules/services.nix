@@ -104,8 +104,8 @@
   # Automatic updates
   system.autoUpgrade = {
     enable = true;
+    flake = "github:visadaking/nixos-valkyrie";
     dates = "weekly";
-    channel = "https://channels.nixos.org/nixos-26.05";
     allowReboot = false;
   };
 

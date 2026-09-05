@@ -38,7 +38,6 @@
     })
     bottles
     prismlauncher
-    lact
     protonup-qt
 
     # internet
