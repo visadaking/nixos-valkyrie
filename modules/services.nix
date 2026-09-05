@@ -4,6 +4,7 @@
   # Boot
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.timeout = 5;
   boot.supportedFilesystems = [ "ntfs" "exfat" ];
   boot.kernelModules = [ "ntsync" ];
 
