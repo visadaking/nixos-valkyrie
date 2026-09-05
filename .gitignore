@@ -4,3 +4,5 @@ secrets.nix
 *.ssh
 .env
 result
+
+valkyrie.qcow2
