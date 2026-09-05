@@ -47,8 +47,8 @@
   hardware.enableRedistributableFirmware = true;
 
   # KDE Plasma / Wayland
-  services.xserver.enable = true;
 
+  services.displayManager.defaultSession = "plasma";
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
