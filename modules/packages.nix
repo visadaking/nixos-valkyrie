@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    openal
     # CLI & Utils
     nano
     git
