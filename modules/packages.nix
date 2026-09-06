@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    open-scq30
 
     # system & cli
     nano
