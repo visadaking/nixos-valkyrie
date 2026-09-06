@@ -9,9 +9,29 @@
     wayland.enable = true;
   };
 
+  services.displayManager.defaultSession = "plasma";
+
   # Wayland
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
+  };
+
+  # Keyboard layout
+  services.xserver.xkb = {
+    layout = "us,il";
+    variant = ",";
+    options = "grp:alt_shift_toggle";
+  };
+
+  # KDE / desktop integration
+  programs.kdeconnect.enable = true;
+  programs.partition-manager.enable = true;
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.kdePackages.xdg-desktop-portal-kde
+    ];
   };
 
   # Remove KDE bloat
@@ -25,18 +45,6 @@
     plasma-keyboard
     kwin-x11
   ];
-
-  # KDE Connect
-  programs.kdeconnect.enable = true;
-
-  # KDE Partition Manager
-  programs.partition-manager.enable = true;
-
-  # Keyboard layout
-  services.xserver.xkb = {
-    layout = "us,il";
-    options = "grp:alt_shift_toggle";
-  };
 
   # Plasma theme
   environment.systemPackages = with pkgs; [

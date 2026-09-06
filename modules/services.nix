@@ -52,23 +52,6 @@
 
   hardware.enableRedistributableFirmware = true;
 
-  # KDE Plasma / Wayland
-
-  services.displayManager.defaultSession = "plasma";
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-  };
-
-  services.desktopManager.plasma6.enable = true;
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = [
-      pkgs.kdePackages.xdg-desktop-portal-kde
-    ];
-  };
-
   # Audio
   services.pulseaudio.enable = false;
 
@@ -92,12 +75,12 @@
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than 14d";
+    options = "--delete-older-than 30d";
   };
 
-  nix.settings.auto-optimise-store = true;
-
   nix.settings = {
+    auto-optimise-store = true;
+
     extra-substituters = [
       "https://nix-gaming.cachix.org"
     ];
@@ -107,20 +90,12 @@
     ];
   };
 
-  # Automatic updates
-  system.autoUpgrade = {
-    enable = true;
-    flake = "github:visadaking/nixos-valkyrie";
-    dates = "weekly";
-    allowReboot = false;
-  };
+  # Automatic upgrades intentionally disabled.
+  # Valkyrie updates should be reviewed and applied manually.
+  system.autoUpgrade.enable = false;
 
-  systemd.services.nixos-upgrade.postStop = ''
-    ${pkgs.util-linux}/bin/wall "NixOS has finished Updating."
-  '';
-
-  # flatpak
-  # nuclear is kept here because the native package is outdated.
+  # Flatpak
+  # Nuclear is kept here because the native package is outdated.
   services.flatpak = {
     enable = true;
 
