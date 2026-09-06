@@ -31,6 +31,8 @@
 
     # gaming
     heroic
+    itch
+    itch-dl
     (lutris.override {
       extraPkgs = pkgs: [
         wineWow64Packages.stable
