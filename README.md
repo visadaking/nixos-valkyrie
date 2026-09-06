@@ -22,7 +22,7 @@ so i thought it was cool, plus i think this is badass.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-last updated - 05/09/2026
+last updated - 06/09/2026
 
 credits: daniel fullmer and NixOS wiki and NixOS discord server
 
@@ -30,3 +30,19 @@ thanks to rond for hosting my config for NixOS on his git :D
 
 
 NOTE: please do not try this configuration on a system with nvidia gpu/intel gpu, please make sure that you have your own modules for nvidia/intel.
+
+---
+
+## valkyrie terminal aliases
+
+lazy shit for managing valkyrie without typing everything every time
+
+```text
+v          = nvim
+v-edit     = edit valkyrie
+v-check    = check the flake
+v-dry      = test the rebuild
+v-switch   = switch to valkyrie
+v-clean    = clean old nix generations
+v-backup   = push valkyrie to both git remotes
+```
