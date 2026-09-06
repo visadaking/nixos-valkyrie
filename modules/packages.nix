@@ -2,34 +2,34 @@
 
 {
   environment.systemPackages = with pkgs; [
-  eartag
-    openal
-    # CLI & Utils
+
+    # system & cli
     nano
+    neovim
     git
     curl
     wget
+    python3
     fastfetch
     hyfetch
     btop
+    starship
+
+    # management & hardware
     mission-center
-    pika-backup
+    gparted
+    smartmontools
+    ddrescue
     alsa-utils
     pavucontrol
-    mangohud
-    gparted
-    neovim
-    starship
-    python3
-    ddrescue
-    smartmontools
-
-    # Peripherals & Hardware
-    solaar
-    piper
+    openal
     virt-manager
 
-    # Gaming Launchers & Tools
+    # peripherals
+    solaar
+    piper
+
+    # gaming
     heroic
     (lutris.override {
       extraPkgs = pkgs: [
@@ -40,34 +40,39 @@
     bottles
     prismlauncher
     protonup-qt
+    mangohud
 
     # internet
-  signal-desktop
-  vesktop
-  librewolf
-  qbittorrent
-  localsend
+    librewolf
+    signal-desktop
+    vesktop
+    qbittorrent
+    localsend
 
-  # editing stuff
+    # privacy & security
+    bitwarden-desktop
+    ente-auth
+    proton-vpn
+
+    # video & streaming
     obs-studio
     kdePackages.kdenlive
     mpv
     qview
     cine
-    reaper
-    fooyin
     jellyfin
+
+    # music & audio
+    fooyin
+    eartag
+    reaper
     audacity
 
-
-    # internet stuff
+    # productivity & documents
     obsidian
     libreoffice
-  onlyoffice-desktopeditors
+    onlyoffice-desktopeditors
     peazip
-    bitwarden-desktop
-    ente-auth
-    proton-vpn
 
   ];
 
