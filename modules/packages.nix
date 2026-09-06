@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+  eartag
     openal
     # CLI & Utils
     nano
