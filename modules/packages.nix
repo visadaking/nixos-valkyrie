@@ -6,6 +6,7 @@
     # system & cli
     nano
     neovim
+    nh
     git
     curl
     wget
@@ -23,7 +24,6 @@
     alsa-utils
     pavucontrol
     openal
-    virt-manager
 
     # peripherals
     solaar

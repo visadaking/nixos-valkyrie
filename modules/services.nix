@@ -5,6 +5,7 @@
 
   # Boot
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.editor = false;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 5;
   boot.supportedFilesystems = [ "ntfs" "exfat" ];
@@ -79,6 +80,7 @@
   };
 
   nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store = true;
 
     extra-substituters = [
