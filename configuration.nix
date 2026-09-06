@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ ... }:
 
 {
   imports = [
@@ -12,7 +12,6 @@
   ];
 
   networking.hostName = "valkyrie";
-  networking.networkmanager.enable = true;
   time.timeZone = "Asia/Jerusalem";
   i18n.defaultLocale = "en_US.UTF-8";
 

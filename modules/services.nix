@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   systemd.oomd.enable = true;
@@ -10,8 +10,11 @@
   boot.supportedFilesystems = [ "ntfs" "exfat" ];
   boot.kernelModules = [ "ntsync" ];
 
-  # DNS
-  networking.networkmanager.dns = "systemd-resolved";
+  # Networking / DNS
+  networking.networkmanager = {
+    enable = true;
+    dns = "systemd-resolved";
+  };
 
   services.resolved = {
     enable = true;
