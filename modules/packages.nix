@@ -2,7 +2,7 @@
 
 let
   pkgsUnstable = import inputs.nixpkgs-unstable {
-    inherit (pkgs) system;
+    system = pkgs.stdenv.hostPlatform.system;
     config.allowUnfree = true;
   };
 in
@@ -12,6 +12,7 @@ in
     # system & cli
     nano
     neovim
+    kitty
     nh
     git
     curl

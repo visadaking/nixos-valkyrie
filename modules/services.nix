@@ -97,5 +97,13 @@
     packages = [
       "org.js.nuclear.Nuclear"
     ];
+
+    restartOnFailure = {
+      enable = true;
+      restartDelay = "60s";
+      exponentialBackoff = {
+        enable = true;
+      };
+    };
   };
 }

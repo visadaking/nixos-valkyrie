@@ -36,14 +36,15 @@
 
   # Remove KDE bloat
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    plasma-browser-integration
     elisa
     gwenview
     okular
     ark
     khelpcenter
-    krdp
     plasma-keyboard
     kwin-x11
+    dolphin-plugins
   ];
 
   # Plasma theme
