@@ -24,6 +24,7 @@
     alsa-utils
     pavucontrol
     openal
+    ventoy-full-qt
 
     # bluetooth
     open-scq30
@@ -53,11 +54,15 @@
     vesktop
     qbittorrent
     localsend
+    musicpresence
+    redact
+    discordchatexporter-desktop
 
     # privacy & security
     bitwarden-desktop
     ente-auth
     proton-vpn
+    simplex-chat-desktop
 
     # video & streaming
     obs-studio
@@ -66,6 +71,7 @@
     qview
     cine
     jellyfin
+    filezilla
 
     # music & audio
     fooyin
