@@ -70,6 +70,8 @@
     eartag
     reaper
     audacity
+    spotify
+    spicetify-cli
 
     # productivity & documents
     obsidian
