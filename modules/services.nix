@@ -95,7 +95,7 @@
     enable = true;
 
     packages = [
-      "org.js.nuclear.Nuclear"
+      "com.nuclearplayer.Nuclear"
     ];
 
     restartOnFailure = {
