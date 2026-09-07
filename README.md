@@ -22,7 +22,7 @@ so i thought it was cool, plus i think this is badass.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-last updated - 06/09/2026
+last updated - 07/09/2026
 
 credits: daniel fullmer and NixOS wiki and NixOS discord server
 
@@ -46,3 +46,17 @@ v-switch   = switch to valkyrie
 v-clean    = clean old nix generations
 v-backup   = push valkyrie to both git remotes
 ```
+
+---
+
+## hardware
+
+this repo contains a placeholder hardware-configuration.nix.
+
+for a new machine, generate your own hardware configuration first.
+
+```text
+nixos-generate-config
+```
+
+then replace the hardware-configuration.nix in this repo with the generated one.
