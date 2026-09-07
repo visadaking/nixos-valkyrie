@@ -9,7 +9,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 5;
   boot.supportedFilesystems = [ "ntfs" "exfat" ];
-  boot.kernelModules = [ "ntsync" ];
 
   # Networking / DNS
   networking.networkmanager = {

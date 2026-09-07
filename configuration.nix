@@ -5,6 +5,7 @@
     ./hardware-configuration.nix
     ./modules/packages.nix
     ./modules/amd.nix
+  ./modules/gaming.nix
     ./modules/programs.nix
     ./modules/services.nix
     ./modules/virtualization.nix
