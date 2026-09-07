@@ -82,13 +82,7 @@
     experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store = true;
 
-    extra-substituters = [
-      "https://nix-gaming.cachix.org"
-    ];
 
-    extra-trusted-public-keys = [
-      "nix-gaming.cachix.org-1:nbjlureqMbRAxR1g/f3hXemL9svXaZF/Ees8vCUUs4="
-    ];
   };
 
   # Automatic upgrades intentionally disabled.
