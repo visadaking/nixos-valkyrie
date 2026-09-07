@@ -25,7 +25,6 @@
 
   # KDE / desktop integration
   programs.kdeconnect.enable = true;
-  programs.partition-manager.enable = true;
 
   xdg.portal = {
     enable = true;

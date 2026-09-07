@@ -13,6 +13,7 @@ in
     nano
     neovim
     kitty
+    vscodium
     nh
     git
     curl
@@ -25,6 +26,8 @@ in
 
     # management & hardware
     mission-center
+    qdirstat
+    qdiskinfo
     gparted
     smartmontools
     ddrescue
@@ -51,10 +54,12 @@ in
     bottles
     prismlauncher
     protonup-qt
+    gearlever
     mangohud
 
     # internet
     librewolf
+    ayugram-desktop
     signal-desktop
     vesktop
     qbittorrent
@@ -72,6 +77,7 @@ in
     # video & streaming
     obs-studio
     kdePackages.kdenlive
+    kdePackages.isoimagewriter
     mpv
     qview
     cine
@@ -81,8 +87,10 @@ in
     # music & audio
     fooyin
     eartag
+    freac
     reaper
     audacity
+    qalculate-qt
     spotify
     spicetify-cli
 

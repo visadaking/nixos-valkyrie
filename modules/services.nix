@@ -96,6 +96,8 @@
 
     packages = [
       "com.nuclearplayer.Nuclear"
+      "io.github.Amethyst.ModManager"
+      "it.belloworld.mercurygram"
     ];
 
     restartOnFailure = {
