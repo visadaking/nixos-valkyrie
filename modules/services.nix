@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   systemd.oomd.enable = true;
@@ -89,6 +89,17 @@
   # Valkyrie updates should be reviewed and applied manually.
   system.autoUpgrade.enable = false;
 
+  # Printing intentionally disabled: Valkyrie has no printer workflow.
+  services.printing.enable = false;
+
+  # Amethyst Mod Manager uses its own Flatpak remote.
+  services.flatpak.remotes = lib.mkOptionDefault [
+    {
+      name = "modmanager-origin";
+      location = "https://chrisdkn.github.io/Amethyst-Mod-Manager/amethyst.flatpakrepo";
+    }
+  ];
+
   # Flatpak
   # Nuclear is kept here because the native package is outdated.
   services.flatpak = {
@@ -96,7 +107,10 @@
 
     packages = [
       "com.nuclearplayer.Nuclear"
-      "io.github.Amethyst.ModManager"
+      {
+        appId = "io.github.Amethyst.ModManager";
+        origin = "modmanager-origin";
+      }
       "it.belloworld.mercurygram"
     ];
 

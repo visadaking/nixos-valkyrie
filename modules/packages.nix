@@ -13,6 +13,7 @@ in
     nano
     neovim
     kitty
+    cowsay
     vscodium
     nh
     git
