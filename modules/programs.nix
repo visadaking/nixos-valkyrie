@@ -1,14 +1,6 @@
 { pkgs, ... }:
 
 {
-  programs.steam = {
-    enable = true;
-
-    extraCompatPackages = with pkgs; [
-      proton-ge-bin
-    ];
-  };
-
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -31,16 +23,4 @@
     };
   };
 
-  users.users.visa = {
-    isNormalUser = true;
-    description = "visa";
-    extraGroups = [
-      "wheel"
-      "networkmanager"
-      "video"
-      "audio"
-      "libvirtd"
-    ];
-    shell = pkgs.zsh;
-  };
 }

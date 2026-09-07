@@ -7,6 +7,7 @@
     ./modules/amd.nix
     ./modules/gaming.nix
     ./modules/programs.nix
+    ./modules/users.nix
     ./modules/services.nix
     ./modules/virtualization.nix
     ./modules/plasma.nix
