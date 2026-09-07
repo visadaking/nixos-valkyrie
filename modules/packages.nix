@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    open-scq30
 
     # system & cli
     nano
@@ -25,6 +24,9 @@
     alsa-utils
     pavucontrol
     openal
+
+    # bluetooth
+    open-scq30
 
     # peripherals
     solaar
