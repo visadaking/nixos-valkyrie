@@ -1,5 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
+let
+  pkgsUnstable = import inputs.nixpkgs-unstable {
+    inherit (pkgs) system;
+    config.allowUnfree = true;
+  };
+in
 {
   environment.systemPackages = with pkgs; [
 
@@ -24,8 +30,6 @@
     alsa-utils
     pavucontrol
     openal
-    ventoy-full-qt
-
     # bluetooth
     open-scq30
 
@@ -54,7 +58,7 @@
     vesktop
     qbittorrent
     localsend
-    musicpresence
+    pkgsUnstable.musicpresence
     redact
     discordchatexporter-desktop
 
