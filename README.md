@@ -1,6 +1,6 @@
 # nixos-valkyrie
 
-my config for NixOS, opinionated, security and programming ready, gaming ready.
+my config for NixOS, opinionated, foss oriented, security, programming, gaming ready.
 
 (just look through the code already instead of reading this lol)
 
@@ -22,7 +22,7 @@ so i thought it was cool, plus i think this is badass.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-last updated - 08/09/2026
+last updated - 09/09/2026
 
 credits: daniel fullmer and NixOS wiki and NixOS discord server
 
