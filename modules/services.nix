@@ -33,15 +33,6 @@
     };
   };
 
-  # Security
-  networking.firewall.enable = true;
-  services.fail2ban.enable = true;
-
-  security.sudo = {
-    enable = true;
-    wheelNeedsPassword = true;
-  };
-
   security.rtkit.enable = true;
 
   # Hardware

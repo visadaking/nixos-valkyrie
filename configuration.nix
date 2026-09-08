@@ -2,6 +2,7 @@
 
 {
   imports = [
+  ./modules/security.nix
     ./hardware-configuration.nix
     ./modules/packages.nix
     ./modules/amd.nix
