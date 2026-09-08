@@ -13,6 +13,7 @@
   };
 
   programs.gamemode.enable = true;
+  programs.gamescope.enable = true;
 
   # gaming binary cache
   nix.settings = {

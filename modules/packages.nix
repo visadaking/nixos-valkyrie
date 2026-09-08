@@ -19,7 +19,7 @@ in
     neovim
     kitty
     cowsay
-    vscodium
+    zed-editor
     nh
     git
     curl
@@ -29,6 +29,8 @@ in
     hyfetch
     btop
     starship
+
+    cameractrls
 
     # management & hardware
     mission-center
@@ -63,6 +65,8 @@ in
     gearlever
     mangohud
 
+    pkgsUnstable.halloy
+
     # internet
     librewolf
     ayugram-desktop
@@ -80,6 +84,8 @@ in
     proton-vpn
     simplex-chat-desktop
 
+    handbrake
+
     # video & streaming
     obs-studio
     kdePackages.kdenlive
@@ -90,6 +96,10 @@ in
     jellyfin-desktop
     filezilla
 
+    easyeffects
+
+    nicotine-plus
+
     # music & audio
     fooyin
     eartag
@@ -99,6 +109,16 @@ in
     qalculate-qt
     spotify
     spicetify-cli
+
+    thunderbird
+
+    element-desktop
+
+    krita
+
+    inkscape
+
+    modrinth-app
 
     # productivity & documents
     obsidian
