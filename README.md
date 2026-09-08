@@ -22,7 +22,7 @@ so i thought it was cool, plus i think this is badass.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-last updated - 07/09/2026
+last updated - 08/09/2026
 
 credits: daniel fullmer and NixOS wiki and NixOS discord server
 
