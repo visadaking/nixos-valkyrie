@@ -96,15 +96,13 @@ in
     obs-studio
     qview
 
-    easyeffects
-
-    nicotine-plus
-
     # music & audio
     audacity
+    easyeffects
     eartag
     fooyin
     freac
+    nicotine-plus
     qalculate-qt
     reaper
     spicetify-cli
