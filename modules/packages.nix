@@ -15,41 +15,43 @@ in
   environment.systemPackages = with pkgs; [
 
     # system & cli
+    btop
+    cowsay
+    curl
+    fastfetch
+    git
+    hyfetch
+    kitty
     nano
     neovim
-    kitty
-    cowsay
-    zed-editor
     nh
-    git
-    curl
-    wget
     python3
-    fastfetch
-    hyfetch
-    btop
     starship
+    wget
+    zed-editor
 
     cameractrls
 
     # management & hardware
-    mission-center
-    qdirstat
-    qdiskinfo
-    gparted
-    smartmontools
-    ddrescue
     alsa-utils
-    pavucontrol
+    ddrescue
+    gparted
+    mission-center
     openal
+    pavucontrol
+    qdiskinfo
+    qdirstat
+    smartmontools
     # bluetooth
     open-scq30
 
     # peripherals
-    solaar
     piper
+    solaar
 
     # gaming
+    bottles
+    gearlever
     heroic
     itch
     itch-dl
@@ -59,24 +61,22 @@ in
         winetricks
       ];
     })
-    bottles
+    mangohud
     prismlauncher
     protonup-qt
-    gearlever
-    mangohud
 
     pkgsUnstable.halloy
 
     # internet
-    librewolf
     ayugram-desktop
-    signal-desktop
-    vesktop
-    qbittorrent
+    discordchatexporter-desktop
+    librewolf
     localsend
     pkgsUnstable.musicpresence
+    qbittorrent
     redact
-    discordchatexporter-desktop
+    signal-desktop
+    vesktop
 
     # privacy & security
     bitwarden-desktop
@@ -87,28 +87,28 @@ in
     handbrake
 
     # video & streaming
-    obs-studio
-    kdePackages.kdenlive
-    kdePackages.isoimagewriter
-    mpv
-    qview
     cine
-    jellyfin-desktop
     filezilla
+    jellyfin-desktop
+    kdePackages.isoimagewriter
+    kdePackages.kdenlive
+    mpv
+    obs-studio
+    qview
 
     easyeffects
 
     nicotine-plus
 
     # music & audio
-    fooyin
-    eartag
-    freac
-    reaper
     audacity
+    eartag
+    fooyin
+    freac
     qalculate-qt
-    spotify
+    reaper
     spicetify-cli
+    spotify
 
     thunderbird
 
@@ -121,8 +121,8 @@ in
     modrinth-app
 
     # productivity & documents
-    obsidian
     libreoffice
+    obsidian
     onlyoffice-desktopeditors
     peazip
 
