@@ -82,7 +82,7 @@ in
     mpv
     qview
     cine
-    jellyfin
+    jellyfin-desktop
     filezilla
 
     # music & audio
