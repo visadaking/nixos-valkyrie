@@ -52,6 +52,12 @@
 
   hardware.enableRedistributableFirmware = true;
 
+  # logitech brio 100 (UVC webcam) and xbox compatible controllers.
+  boot.kernelModules = [
+    "uvcvideo"
+    "xpad"
+  ];
+
   # Audio
   services.pulseaudio.enable = false;
 
