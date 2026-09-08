@@ -52,6 +52,12 @@
 
   hardware.enableRedistributableFirmware = true;
 
+  # Firmware updates
+  # hardware maintenance policy:
+  # LVFS/fwupd where supported -> native linux subsystem where firmware is not relevant
+  # -> official vendor mechanism only when necessary.
+  services.fwupd.enable = true;
+
   # logitech brio 100 (UVC webcam) and xbox compatible controllers.
   boot.kernelModules = [
     "uvcvideo"
