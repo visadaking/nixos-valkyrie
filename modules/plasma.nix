@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+# X11 compatible cuz life is good right? (valve pls support wayland ffs)
+programs.xwayland.enable = true;
+
   # KDE Plasma 6
   services.desktopManager.plasma6.enable = true;
 
