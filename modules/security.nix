@@ -1,8 +1,6 @@
 { ... }:
 
 {
-  # if a capability is not required, don't expose it by default.
-
   # firewall
   networking.firewall.enable = true;
 

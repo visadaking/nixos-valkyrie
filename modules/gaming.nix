@@ -12,7 +12,6 @@
     ];
   };
 
-  # game performance
   programs.gamemode.enable = true;
 
   # gaming binary cache

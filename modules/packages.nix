@@ -7,6 +7,11 @@ let
   };
 in
 {
+  environment.etc."xdg/kitty/kitty.conf".text = ''
+    # disable kitty remote control
+    allow_remote_control no
+  '';
+
   environment.systemPackages = with pkgs; [
 
     # system & cli
