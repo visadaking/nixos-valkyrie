@@ -6,9 +6,6 @@
   # firewall
   networking.firewall.enable = true;
 
-  # ssh
-  services.openssh.enable = true;
-
   # fail2ban
   services.fail2ban.enable = true;
 
