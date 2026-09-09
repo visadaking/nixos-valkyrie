@@ -55,6 +55,7 @@ in
     heroic
     itch
     itch-dl
+    modrinth-app
     (lutris.override {
       extraPkgs = pkgs: [
         wineWow64Packages.stable
@@ -70,12 +71,14 @@ in
     # internet
     ayugram-desktop
     discordchatexporter-desktop
+    element-desktop
     librewolf
     localsend
     pkgsUnstable.musicpresence
     qbittorrent
     redact
     signal-desktop
+    thunderbird
     vesktop
 
     # privacy & security
@@ -84,11 +87,10 @@ in
     proton-vpn
     simplex-chat-desktop
 
-    handbrake
-
     # video & streaming
     cine
     filezilla
+    handbrake
     jellyfin-desktop
     kdePackages.isoimagewriter
     kdePackages.kdenlive
@@ -108,15 +110,9 @@ in
     spicetify-cli
     spotify
 
-    thunderbird
-
-    element-desktop
-
-    krita
-
+    # graphics
     inkscape
-
-    modrinth-app
+    krita
 
     # productivity & documents
     libreoffice
