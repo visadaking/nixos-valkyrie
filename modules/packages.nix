@@ -20,6 +20,7 @@ in
     curl
     fastfetch
     git
+    lazygit
     hyfetch
     kitty
     nano
@@ -27,6 +28,7 @@ in
     nh
     python3
     starship
+    tldr
     wget
     zed-editor
 
@@ -88,6 +90,7 @@ in
     simplex-chat-desktop
 
     # video & streaming
+    ffmpeg
     cine
     filezilla
     handbrake
