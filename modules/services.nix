@@ -114,7 +114,6 @@
         appId = "io.github.Amethyst.ModManager";
         origin = "modmanager-origin";
       }
-      "it.belloworld.mercurygram"
     ];
 
     restartOnFailure = {
