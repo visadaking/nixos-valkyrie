@@ -119,8 +119,7 @@ in
 
     # productivity & documents
     libreoffice
-    obsidian
-    onlyoffice-desktopeditors
+    logseq
     peazip
 
   ];
