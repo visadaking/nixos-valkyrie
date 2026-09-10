@@ -9,11 +9,6 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
-[app.fluxer.Fluxer]
-6C640926BE5B4BC820140821464F414D-Ctrl+Shift+D=none,none,Electron shortcut Ctrl+Shift+D
-F9D0F8542915EC0C3B0FD7F8E014A0BA-Ctrl+Shift+M=none,none,Electron shortcut Ctrl+Shift+M
-_k_friendly_name=Fluxer
-
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
