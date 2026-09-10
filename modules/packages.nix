@@ -25,6 +25,7 @@ in
     kitty
     nano
     neovim
+    kdePackages.kate
     nh
     python3
     starship

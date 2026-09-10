@@ -26,56 +26,22 @@
       };
 
       modules = [
-        {
-          type = "custom";
-          format = "╭─[ valkyrie@visa ]──────────────────────────────╮";
-        }
-
-        {
-          type = "custom";
-          format = "│                                              │";
-        }
-
         "os"
         "kernel"
         "cpu"
         "gpu"
-
-        {
-          type = "memory";
-          format = "│  MEMORY    {used} / {total}";
-        }
-
-        {
-          type = "swap";
-          format = "│  SWAP      {used} / {total}";
-        }
+        "memory"
+        "swap"
 
         {
           type = "disk";
-          format = "│  DISK      {used} / {total}";
           folders = [ "/" ];
-        }
-
-        {
-          type = "custom";
-          format = "│                                              │";
         }
 
         "de"
         "wm"
         "shell"
         "packages"
-
-        {
-          type = "custom";
-          format = "│                                              │";
-        }
-
-        {
-          type = "custom";
-          format = "╰──────────────────────────────────────────────╯";
-        }
 
         {
           type = "custom";

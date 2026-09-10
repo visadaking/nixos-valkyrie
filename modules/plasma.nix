@@ -44,7 +44,6 @@ programs.xwayland.enable = true;
     okular
     ark
     khelpcenter
-    plasma-keyboard
     kwin-x11
     dolphin-plugins
   ];

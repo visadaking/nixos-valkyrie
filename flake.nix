@@ -14,23 +14,6 @@
     nixosConfigurations = {
       valkyrie = nixpkgs.lib.nixosSystem {
         modules = [
-          # VM-only settings: these do not affect the real host.
-          {
-            virtualisation.vmVariant = {
-              virtualisation = {
-                memorySize = 12288;
-                diskSize = 51200;
-                cores = 8;
-              };
-
-              users.users.visa.initialPassword = "visa";
-
-              services.displayManager.autoLogin = {
-                enable = true;
-                user = "visa";
-              };
-            };
-          }
 
           ./configuration.nix
           nix-flatpak.nixosModules.nix-flatpak
