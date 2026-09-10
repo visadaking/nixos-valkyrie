@@ -110,8 +110,7 @@ in
     nicotine-plus
     qalculate-qt
     reaper
-    spicetify-cli
-    spotify
+    inputs.fastpotify.packages."${pkgs.stdenv.hostPlatform.system}".default
 
     # graphics
     inkscape
