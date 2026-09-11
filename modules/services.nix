@@ -33,12 +33,23 @@
     };
   };
 
+  # Audio / Bluetooth
   security.rtkit.enable = true;
 
-  # Hardware
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = false;
+  };
+
+  services.pulseaudio.enable = false;
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+    wireplumber.enable = true;
   };
 
   hardware.enableRedistributableFirmware = true;
@@ -54,17 +65,6 @@
     "uvcvideo"
     "xpad"
   ];
-
-  # Audio
-  services.pulseaudio.enable = false;
-
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
 
   # Memory
   zramSwap = {
