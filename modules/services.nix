@@ -26,9 +26,8 @@
 
       DNS = [
         "9.9.9.9#dns.quad9.net"
-        "1.1.1.2#security.cloudflare-dns.com"
+        "194.242.2.2#dns.mullvad.net"
         "149.112.112.112#dns.quad9.net"
-        "1.0.0.2#security.cloudflare-dns.com"
       ];
     };
   };
