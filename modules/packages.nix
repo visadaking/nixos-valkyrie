@@ -85,7 +85,8 @@ in
     legcord
 
     # privacy & security
-    bitwarden-desktop
+    keepassxc
+    syncthing
     ente-auth
     proton-vpn
     simplex-chat-desktop
