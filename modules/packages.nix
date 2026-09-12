@@ -90,6 +90,7 @@ in
     ente-auth
     proton-vpn
     simplex-chat-desktop
+    mumble
 
     # video & streaming
     ffmpeg
