@@ -82,7 +82,7 @@ in
     redact
     signal-desktop
     thunderbird
-    vesktop
+    legcord
 
     # privacy & security
     bitwarden-desktop
