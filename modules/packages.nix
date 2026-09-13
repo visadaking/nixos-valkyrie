@@ -72,7 +72,6 @@ in
 
     # internet
     ayugram-desktop
-    discordchatexporter-desktop
     element-desktop
     librewolf
     localsend
