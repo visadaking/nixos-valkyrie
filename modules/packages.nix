@@ -58,7 +58,6 @@ in
     heroic
     itch
     itch-dl
-    modrinth-app
     (lutris.override {
       extraPkgs = pkgs: [
         wineWow64Packages.stable
